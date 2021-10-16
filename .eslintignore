@@ -1,0 +1,6 @@
+migrations
+models
+seeders
+node_modules
+src/service/resume-pdf
+src/test

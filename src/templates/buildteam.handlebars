@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+	<style>
+        .wrap{
+        width:70%;
+        margin: auto;
+        border: 1px solid #dddddd;
+        border-radius: 10px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        margin-top: 30px;
+      }
+      .row{
+        width:100%;
+        display: flex;
+        border-bottom: 1px solid #dddddd;
+        font-weight: 300;
+      }
+      .row:hover{
+         background-color: #ececff;
+         cursor: pointer;    
+      }
+      .row-end{
+        border-bottom-left-radius:10px;
+        border-bottom-right-radius:10px;
+        border-bottom:none;
+      }
+      .cell{
+       padding-left: 40px;
+       padding-top: 20px;
+       padding-bottom: 20px;
+      }
+      .title{
+         border-top-left-radius:10px;
+        border-top-right-radius:10px;
+        background-color: #15bcc5;
+       text-align: center;
+       border-bottom: 1px solid #dddddd;
+       padding-top: 20px;
+       padding-bottom: 20px;
+       font-size: 24px;
+       color: white;
+       font-weight: 500;
+      }
+      .left{
+       min-width:40%;  
+       padding-left: 50px;
+      }
+    </style>
+</head>
+
+<body>
+ <div class="wrap">
+       <div class="table">
+           <div class="tbody">
+           <div class="title">Build a sustainable and strong tech team together</div>
+                <div class="row">
+                    <div class="cell left">Name</div>
+                    <div class="cell">{{name}}</div>
+                </div>
+                <div class="row">
+                    <div class="cell left">Phone</div>
+                    <div class="cell">{{phone}}</div>
+                </div>
+                <div class="row">
+                    <div class="cell left">Email</div>
+                    <div class="cell">{{email}}</div>
+                </div>
+                  <div class="row">
+                    <div class="cell left">Company name</div>
+                    <div class="cell">{{company}}</div>
+                </div>
+            </div>
+      </div>
+    </div>
+</body>
+
+</html>

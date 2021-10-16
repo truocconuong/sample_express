@@ -1,0 +1,57 @@
+const Router = require('express').Router();
+// const testRoutes = require('./test');
+const authRoutes = require('./auth');
+const locationRoutes = require('./location');
+const clientRoutes = require('./client');
+const jobRoutes = require('./job');
+const candidateRoutes = require('./candidate');
+const laneRoutes = require('./lane');
+const cardRoutes = require('./card');
+const teamRoutes = require('./team');
+const roleRoutes = require('./role');
+const skillRoutes = require('./skill');
+const taskRoutes = require('./task');
+const interviewRoutes = require('./interview');
+const notificationRoutes = require('./notification');
+const systemParameterRoutes = require('./systemparameter');
+const sendmailRoutes = require('./sendmail'); // được sử dụng để gửi email ở fetch.tech
+const emailRoutes = require('./email');
+const historyRoutes = require('./history');
+const blogRoutes = require('./blog');
+const caculatorRoutes = require('./caculator');
+const socialRoutes = require('./social');
+const bankrecruiterRoutes = require('./bankrecruiter');
+const recruiterRoutes = require('./recruiter');
+// const chatbotRoutes = require('./chatbot');
+const listtaskRoutes = require('./listTask');
+
+// Router.use(chatbotRoutes);
+const versionTwo = require('./v2');
+
+// Router.use(testRoutes);
+Router.use(authRoutes);
+Router.use(locationRoutes);
+Router.use(clientRoutes);
+Router.use(jobRoutes);
+Router.use(candidateRoutes);
+Router.use(laneRoutes);
+Router.use(cardRoutes);
+Router.use(teamRoutes);
+Router.use(roleRoutes);
+Router.use(skillRoutes);
+Router.use(taskRoutes);
+Router.use(interviewRoutes);
+Router.use(notificationRoutes);
+Router.use(systemParameterRoutes);
+Router.use(sendmailRoutes);
+Router.use(emailRoutes);
+Router.use(historyRoutes);
+Router.use(blogRoutes);
+Router.use(caculatorRoutes);
+Router.use(socialRoutes);
+Router.use(bankrecruiterRoutes);
+Router.use(recruiterRoutes);
+Router.use('/api/v2', versionTwo);
+Router.use(listtaskRoutes);
+
+module.exports = Router;
